@@ -2,6 +2,10 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
+//스타일
+import { Container } from './index.style';
+import Name from '@/components/Name';
+
 const MainPage: React.FC = () => {
   const router = useRouter();
 
@@ -10,11 +14,11 @@ const MainPage: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>안녕하세요, 메인 페이지입니다!</h1>
+    <Container>
+      <Name />
       {/* 메인 페이지의 다른 컴포넌트와 내용을 이곳에 추가하세요 */}
-      <button onClick={goToAboutPage}>About 페이지로 이동</button>
-    </div>
+      {/* <button onClick={goToAboutPage}>About 페이지로 이동</button> */}
+    </Container>
   );
 };
 
