@@ -17,8 +17,9 @@ export const Container = styled.div`
   /* 기존 스타일 */
   width: 100%;
   height: 800px;
-  background-color: #f6f6f6;
-
+  /* background-color: #f6f6f6; */
+  margin-left: 50px;
+  font-size: 50px;
   /* 애니메이션 추가 */
   animation: ${bounce} 1s ease-out;
 `;
