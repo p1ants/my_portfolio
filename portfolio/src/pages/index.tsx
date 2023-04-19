@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 
 // 스타일
 import { Container, Name } from './index.style';
+// import Name from '@/components/name/Name';
 
 const MainPage: React.FC = () => {
   const router = useRouter();
