@@ -18,7 +18,16 @@ const HeaderModal: React.FC = () => {
     <ModalContainer>
       <ModalContent reverse={reverse}>
         <MenuItem delay="0s" reverse={reverse} onClick={handleSkillClick}>
-          Skill
+          Skills
+        </MenuItem>
+        <MenuItem delay="0s" reverse={reverse} onClick={handleSkillClick}>
+          about
+        </MenuItem>
+        <MenuItem delay="0s" reverse={reverse} onClick={handleSkillClick}>
+          projects
+        </MenuItem>
+        <MenuItem delay="0s" reverse={reverse} onClick={handleSkillClick}>
+          contact
         </MenuItem>
         {/* 다른 MenuItem들 */}
       </ModalContent>

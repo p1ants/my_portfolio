@@ -1,6 +1,5 @@
 // index.style.ts
-import styled, { css,keyframes } from 'styled-components';
-
+import styled, { css, keyframes } from 'styled-components';
 
 const bounce = keyframes`
   0% {
@@ -35,7 +34,6 @@ export const Container = styled.div`
 //   `}
 // `;
 
-
 const bounceIn = keyframes`
   0% {
     transform: translateX(-100%);
@@ -52,10 +50,4 @@ const bounceOut = keyframes`
   100% {
     transform: translateX(-100%);
   }
-`;
-
-export const Name = styled.h1<{ reverse?: boolean }>`
-  ${({ reverse }) => css`
-    animation: ${reverse ? bounceOut : bounceIn} 1s ease-out forwards;
-  `}
 `;

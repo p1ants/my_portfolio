@@ -95,9 +95,6 @@ export const IconLine = styled.span`
 
 //카테고리 모달창
 
-
-
-
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -139,13 +136,12 @@ export const Backdrop = styled.div`
 
 export const ModalContent = styled.div`
   position: relative;
-  background-color: none;
+  background-color: transparent;
   border-radius: 5px;
   padding: 20px;
   z-index: 1;
   animation: ${slideUp} 0.5s ease-out;
 `;
-
 
 const bounceUp = keyframes`
   0% {
@@ -158,13 +154,11 @@ const bounceUp = keyframes`
 
 export const MenuItem = styled.li<{ delay: string; reverse?: boolean }>`
   ${({ delay, reverse }) => css`
-    animation: ${reverse ? bounceDown : bounceUp} 0.5s ease-out ${delay} forwards;
+    animation: ${reverse ? bounceDown : bounceUp} 0.5s ease-out ${delay}
+      forwards;
   `}
   overflow: hidden;
 `;
-
-
-
 
 const bounceDown = keyframes`
   0% {
