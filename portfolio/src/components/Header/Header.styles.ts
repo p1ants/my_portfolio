@@ -156,9 +156,21 @@ const bounceUp = keyframes`
   }
 `;
 
-export const MenuItem = styled.li<{ delay: string }>`
-  ${({ delay }) => css`
-    animation: ${bounceUp} 0.5s ease-out ${delay} forwards;
+export const MenuItem = styled.li<{ delay: string; reverse?: boolean }>`
+  ${({ delay, reverse }) => css`
+    animation: ${reverse ? bounceDown : bounceUp} 0.5s ease-out ${delay} forwards;
   `}
   overflow: hidden;
+`;
+
+
+
+
+const bounceDown = keyframes`
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(100% 0 0 0);
+  }
 `;
