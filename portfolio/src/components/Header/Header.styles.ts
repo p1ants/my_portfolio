@@ -129,7 +129,7 @@ export const Backdrop = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   animation: ${fadeIn} 0.3s ease-out;
   pointer-events: none;
 `;
@@ -151,13 +151,19 @@ const bounceUp = keyframes`
     clip-path: inset(0 0 0 0);
   }
 `;
-
+// components/Header/Header.styles.ts
+// components/Header/Header.styles.ts
 export const MenuItem = styled.li<{ delay: string; reverse?: boolean }>`
   ${({ delay, reverse }) => css`
     animation: ${reverse ? bounceDown : bounceUp} 0.5s ease-out ${delay}
       forwards;
   `}
   overflow: hidden;
+  font-size: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 40px;
 `;
 
 const bounceDown = keyframes`
