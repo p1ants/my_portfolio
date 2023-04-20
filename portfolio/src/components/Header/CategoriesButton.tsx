@@ -20,7 +20,7 @@ const CategoriesButtonComponent: React.FC = () => {
         <IconLine />
         <IconLine />
       </CategoriesButton>
-      {isModalOpen && <CategoryModal />}
+      {isModalOpen && <CategoryModal onClose={closeModal} />}
     </>
   );
 };
