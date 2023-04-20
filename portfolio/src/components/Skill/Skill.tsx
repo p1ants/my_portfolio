@@ -61,10 +61,14 @@ const Skill: React.FC = () => {
       event.target.connectedEdges().removeClass('highlight');
     });
 
+    setTimeout(() => {
+      cy.resize();
+    }, 100);
+
     return () => {
       cy.destroy();
     };
-  }, [container]);
+  }, []);
 
   return (
     <div
