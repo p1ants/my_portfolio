@@ -1,6 +1,7 @@
 // src/pages/Skills.tsx
 import React from 'react';
 import { useRouter } from 'next/router';
+import Skill from '@/components/Skill/Skill';
 
 // 스타일
 
@@ -9,6 +10,7 @@ const skillsPage: React.FC = () => {
   return (
     <>
       <div>안녕하세요, Skills 페이지입니다!</div>
+      <Skill />
       {/* Skills 페이지의 다른 컴포넌트와 내용을 이곳에 추가하세요 */}
     </>
   );
