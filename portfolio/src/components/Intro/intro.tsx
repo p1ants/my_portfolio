@@ -16,7 +16,7 @@ export default function Intro() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % textList.length);
-    }, 500);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -25,7 +25,7 @@ export default function Intro() {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    config: { duration: 1500 },
+    config: { duration: 1000 },
   });
 
   return (
