@@ -11,5 +11,5 @@ export const Container = styled.div`
 `;
 
 export const AnimatedText = styled.h1`
-  margin-bottom: 16px;
+  margin-bottom: 200px;
 `;
